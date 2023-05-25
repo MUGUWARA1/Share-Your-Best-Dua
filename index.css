@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Josefin+Sans:ital@1&display=swap');
+:root
+{
+    /* CSS HEX */
+--black: #000000ff;
+--timberwolf: #CFCFCFff;
+--sky-blue: #89BBD1ff;
+--black-2: #000000ff;
+--mint: #47B28Eff;
+
+/* SCSS Gradient */
+--gradient-top: linear-gradient(0deg, #000000ff, #CFCFCFff, #89BBD1ff, #89BBD1ff, #47B28Eff);
+--gradient-right: linear-gradient(90deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-bottom: linear-gradient(180deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-left: linear-gradient(270deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-top-right: linear-gradient(45deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-bottom-right: linear-gradient(135deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-top-left: linear-gradient(225deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-bottom-left: linear-gradient(315deg, #000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+--gradient-radial: radial-gradient(#000000ff, #CFCFCFff, #89BBD1ff, #000000ff, #47B28Eff);
+}
+
+body
+{
+    background-image: var(--gradient-top);
+    height: 100vh;
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.container
+{
+    margin-top: 0.5cm;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 25px;
+    color: white;
+    text-shadow:0px 0px 5px #000000ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#inp1
+{
+    width: 300px;
+    min-height: 100px;
+    background-color: transparent;
+    border-radius: 8px;
+    border:2px solid white ;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    line-height: 1;
+    word-wrap: break-word;
+
+
+    
+}
+#publish-btn
+{
+    width: 200px;
+    font-style: bold;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+    margin-top: 12px;
+    border-radius:10px ;
+    border-color: transparent;
+    background-color: var(--mint);
+    cursor: pointer;
+}
+#publish-btn:hover
+{
+    background-color: skyblue;
+    color: black;
+    padding-left: 10px;
+}
+
+.divi
+{
+    width: 350px;
+    max-width:350px;
+    height: 150px;
+    min-height: 100px;
+    background-color:rgba(171, 169, 169, 0.438)
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin:30px auto;
+    word-wrap: break-all;
+    box-sizing: content-box;
+
+}
+.divi:hover
+{
+    background-color: cadetblue;
+}
